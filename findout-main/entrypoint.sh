@@ -5,6 +5,8 @@ echo "Install dependencies"
 npm install
 npm install --save-dev vite-plugin-vuetify
 
+chmod +x node_modules/.bin/vite
+
 chown -Rf docker:docker ./
 
-exec "$@";
+exec "$@"

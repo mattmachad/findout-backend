@@ -36,15 +36,16 @@ export default {
       const H = window.H;
       const maptypes = this.platform.createDefaultLayers();
 
-
+      
       const unimarCoordinates = {
     lat: -22.23513460978872,
     lng: -49.96971069370079           
   };
-      const map = new H.Map(mapContainer, maptypes.vector.normal.map, {
-        zoom: 16,
-        center: unimarCoordinates
-      });
+     const map = new H.Map(mapContainer, maptypes.vector.normal.map, {
+  zoom: 16,
+  center: unimarCoordinates
+});
+
 
       const icon = new H.map.Icon('https://cdn-icons-png.flaticon.com/512/5817/5817087.png', {
         size: { w: 50, h: 50 }
